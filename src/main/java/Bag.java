@@ -34,7 +34,6 @@ public abstract class Bag {
         this.capacity = capacity;
         this.numberOfContents = 0;
         this.contents = new String[this.capacity];
-        System.out.println(Arrays.toString(this.contents));
     }
 
     /*
@@ -101,7 +100,7 @@ public abstract class Bag {
         if (this.numberOfContents == 0) {
             return null;
         }
-        return this.contents[this.numberOfContents--];
+        return this.contents[--this.numberOfContents];
     }
 
 
